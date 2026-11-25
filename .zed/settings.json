@@ -1,0 +1,17 @@
+{
+  "jupyter": {
+    "enabled": true,
+    "kernel_selections": {
+      "python": "python3"
+    }
+  },
+  "lsp": {
+    "pyright": {
+      "settings": {
+        "python": {
+          "pythonPath": "/usr/bin/python3"
+        }
+      }
+    }
+  }
+}

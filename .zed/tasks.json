@@ -1,0 +1,70 @@
+[
+  {
+    "label": "Run All Labs (1–4)",
+    "command": "python3",
+    "args": [
+      "-c",
+      "import subprocess, glob, os; env = {**os.environ, 'MPLBACKEND': 'Agg'}; [print(f'\\n=== Running {f} ===') or subprocess.run(['python3', f], check=True, env=env) for f in sorted(glob.glob('lab*.py'))]"
+    ],
+    "cwd": "$ZED_WORKTREE_ROOT",
+    "use_new_terminal": false,
+    "allow_concurrent_runs": false,
+    "reveal": "always"
+  },
+  {
+    "label": "Run Current Python File",
+    "command": "python3",
+    "args": ["$ZED_FILE"],
+    "env": {
+      "MPLBACKEND": "Agg"
+    },
+    "cwd": "$ZED_WORKTREE_ROOT",
+    "use_new_terminal": false,
+    "allow_concurrent_runs": false,
+    "reveal": "always"
+  },
+  {
+    "label": "Run Lab 1: Data Wrangling",
+    "command": "python3",
+    "args": ["lab1_data_wrangling.py"],
+    "env": {
+      "MPLBACKEND": "Agg"
+    },
+    "cwd": "$ZED_WORKTREE_ROOT",
+    "use_new_terminal": false,
+    "reveal": "always"
+  },
+  {
+    "label": "Run Lab 2: Data Analysis (EDA)",
+    "command": "python3",
+    "args": ["lab2_data_analysis.py"],
+    "env": {
+      "MPLBACKEND": "Agg"
+    },
+    "cwd": "$ZED_WORKTREE_ROOT",
+    "use_new_terminal": false,
+    "reveal": "always"
+  },
+  {
+    "label": "Run Lab 3: Model Development",
+    "command": "python3",
+    "args": ["lab3_model_development.py"],
+    "env": {
+      "MPLBACKEND": "Agg"
+    },
+    "cwd": "$ZED_WORKTREE_ROOT",
+    "use_new_terminal": false,
+    "reveal": "always"
+  },
+  {
+    "label": "Run Lab 4: Model Evaluation & Refinement",
+    "command": "python3",
+    "args": ["lab4_model_evaluation.py"],
+    "env": {
+      "MPLBACKEND": "Agg"
+    },
+    "cwd": "$ZED_WORKTREE_ROOT",
+    "use_new_terminal": false,
+    "reveal": "always"
+  }
+]
